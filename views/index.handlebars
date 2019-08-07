@@ -2,16 +2,59 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
+        <section id="slideshow">
+          <h2>Testing</h2>
+          <div class="slick">
+            <div>testing
+              <img src="https://images.pexels.com/photos/2437295/pexels-photo-2437295.jpeg" alt="" srcset="">
+            </div>
+            <div>your content
+              <img src="https://images.pexels.com/photos/1482193/pexels-photo-1482193.jpeg" alt="" srcset="">
+            </div>
+            <div>your content
+              <img src="https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </section>
+
+        <div>
+          <h1>Talk to Me</h1>
+          <div id="mario-chat">
+            <div id="chat-window">
+              <div id="output"></div>
+              <div id="feedback"></div>
+            </div>
+            <input class="webSocketinput" id="handle" type="text" placeholder="Handle">
+            <input class="webSocketinput" id="message" type="text" placeholder="Message">
+            <button class="webSocketbutton" id="send">Send</button>
+
+          </div>
+        </div>
+
+        <div>
+          <h2>Books</h2>
+          <label for="book">Search Book</label>
+          <input  id="searchBook" type="text" placeholder="Search Book">
+          <button id="bookButton">Search</button>
+          <div id="bookList">
+
+            <img src="" alt="">
+
+          </div>
+        </div>
+
         <h1>{{msg}}</h1>
         <h2>This is our Home Page!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+              placeholder="Enter Example Text">
           </div>
           <div class="form-group">
             <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description"
+              placeholder="Enter Example Description"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
@@ -30,4 +73,7 @@
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.10/auth0.min.js"></script>
 <script src="/js/index.js"></script>
